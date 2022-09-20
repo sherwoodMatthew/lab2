@@ -17,4 +17,18 @@ public class MainController {
     {
         return "page2";
     }
+/* added these dynamic pages to the main controller so you don't have to go thorugh weired file managmetns when call
+ed in main
+*/
+    @GetMapping("/dynamicPage1")
+    public String getDynamicPage1()
+    {
+        return "dynamicPage1";
+    }
+
+    @GetMapping("/dynamicPage2")
+    public String getDynamicPage2()
+    {
+        return "dynamicPage2";
+    }
 }
